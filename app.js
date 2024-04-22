@@ -1,6 +1,6 @@
 let currentLanguage = "EN"
 let currentCurrency = "EUR"
-let gameHasBuyBonus = true
+let gameHasBuyBonus = false
 let gameHasBurningMode = true
 let gameHasdoubleChance = true
 let mainColor = "#ff0096"
@@ -66,12 +66,24 @@ function createHTMLFromJSON() {
                 container.style.alignItems = "center";
 
                 const title = document.createElement("h2");
-                if (section.sectionType == "symbolPayout" || section.sectionType == "lineLayout") {
-                    title.style.border = "groove";
-                    title.style.borderWidth = "2px 0px 1px 0px";
-                    title.style.borderColor = mainColor;
-                    title.style.padding = "5px 0";
-                    title.textContent = section.Title[currentLanguage];
+                title.style.border = "groove";
+                title.style.borderWidth = "2px 0px 1px 0px";
+                title.style.borderColor = mainColor;
+                title.style.padding = "5px 0";
+                title.textContent = section.Title[currentLanguage];
+
+                const isBuyBonusEnabled = section.sectionType === "BuyBonus" && gameHasBuyBonus;
+                const isTripleChanceEnabled = section.sectionType === "tripleChance" && gameHasdoubleChance;
+                const isBurningModeEnabled = section.sectionType === "burningMode" && gameHasBurningMode;
+                const isRuleSection = section.sectionType === "Rules"
+                const isFeature = section.sectionType === "Feature"
+                const isSymbolSection = section.sectionType === "lineLayout"
+                const isLineSection = section.sectionType === "symbolPayout"
+                const isButtonSection = section.sectionType === "Button"
+
+                if (isBuyBonusEnabled || isTripleChanceEnabled || isBurningModeEnabled) {
+                    container.appendChild(title);
+                } else if (isRuleSection || isFeature || isSymbolSection || isLineSection || isButtonSection) {
                     container.appendChild(title);
                 }
 
@@ -209,17 +221,20 @@ function createSymbolSection(section, subSection, subContainer) {
                         const multiplierSymbol = document.createElement("p");
                         const valueSymbol = document.createElement("p");
                         const specialContentSymbol = document.createElement("p");
+                        const currencySymbol = document.createElement("p");
 
                         multiplierSymbol.innerText = dataInfo.multipliers
                         multiplierSymbol.style.color = mainColor
 
                         valueSymbol.innerText = dataInfo.value
                         valueSymbol.style.marginLeft = "10px"
+                        currencySymbol.style.marginLeft = "5px"
 
-
+                        currencySymbol.innerText = currentCurrency
 
                         symbolDivLine.appendChild(multiplierSymbol)
                         symbolDivLine.appendChild(valueSymbol)
+                        symbolDivLine.appendChild(currencySymbol)
 
                         // Check if special content exists
                         if (dataInfo.specialContent[0][currentLanguage] != null) {
@@ -332,15 +347,7 @@ function createLineLayoutSection(mainSection, section, subSection, subContainer)
 
 function createRuleSection(mainSection, subSection, subContainer) {
     if (mainSection.sectionType == 'Rules') {
-        if (mainSection.Type === "Title") {
-            const title = document.createElement("h2");
-            title.style.border = "groove";
-            title.style.borderWidth = "2px 0px 1px 0px";
-            title.style.borderColor = mainColor;
-            title.style.padding = "5px 0";
-            title.textContent = mainSection.Title[currentLanguage];
-            subContainer.appendChild(title)
-        }
+
         if (subSection.displayContent && Array.isArray(subSection.displayContent)) {
             subSection.displayContent.forEach((contentDisplay) => {
                 if (contentDisplay.wording && Array.isArray(contentDisplay.wording)) {
@@ -453,17 +460,7 @@ function createNewSections(mainSection, subSection, subContainer) {
         Array.isArray(subSection.features)
 
     ) {
-        // Section Title
-        if (mainSection.Type === "Title") {
-            const title = document.createElement("h2");
-            title.style.border = "groove";
-            title.style.borderWidth = "2px 0px 1px 0px";
-            title.style.borderColor = mainColor;
-            title.style.padding = "5px 0";
-            title.textContent = mainSection.Title[currentLanguage];
 
-            subContainer.appendChild(title)
-        }
 
         subSection.features.forEach((contentDisplay) => {
 
@@ -524,20 +521,24 @@ function createNewSections(mainSection, subSection, subContainer) {
                                 const multiplierValue = document.createElement("p");
                                 const symbolValue = document.createElement("p");
                                 const specialData = document.createElement("p");
+                                const currencySymbol = document.createElement("p");
+
+                                symbolValue.style.marginLeft = "5px"
 
                                 multiplierValue.innerText = dataInfo.multipliers
                                 symbolValue.innerText = dataInfo.value
+                                currencySymbol.innerText = currentCurrency
                                 specialData.innerText = dataInfo.specialContent[0][currentLanguage];
 
                                 if (dataInfo.multipliers != "") rightDivChild.appendChild(multiplierValue)
-                                if (dataInfo.value != "") rightDivChild.appendChild(multiplierValue)
+                                if (dataInfo.value != "") rightDivChild.appendChild(symbolValue) && rightDivChild.appendChild(currencySymbol)
                                 if (dataInfo.specialContent[0][currentLanguage] != "") rightDivChild.appendChild(specialData)
 
                                 if (feature.data.length > 1) {
                                     rightDivParent.appendChild(rightDivChild)
                                 } else {
                                     if (dataInfo.multipliers != "") rightDivParent.appendChild(multiplierValue)
-                                    if (dataInfo.value != "") rightDivParent.appendChild(multiplierValue)
+                                    if (dataInfo.value != "") rightDivParent.appendChild(symbolValue) && rightDivParent.appendChild(currencySymbol)
                                     if (dataInfo.specialContent[0][currentLanguage] != "") rightDivParent.appendChild(specialData)
                                 }
 
@@ -601,15 +602,7 @@ function createButtonSection(section, subSection, subContainer) {
             subSection.displayContent &&
             Array.isArray(subSection.displayContent)
         ) {
-            if (section.Type === "Title") {
-                const title = document.createElement("h2");
-                title.style.border = "groove";
-                title.style.borderWidth = "2px 0px 1px 0px";
-                title.style.borderColor = mainColor;
-                title.style.padding = "5px 0";
-                title.textContent = section.Title[currentLanguage];
-                subContainer.appendChild(title)
-            }
+
             subSection.displayContent.forEach((contentDisplay) => {
                 const buttonContainerDiv = document.createElement("div");
                 buttonContainerDiv.classList.add("sub-container-grid-button-layout");
@@ -658,15 +651,7 @@ function createbuyBonusSection(mainSection, subSection, subContainer) {
 
     if (isBuyBonusEnabled || isTripleChanceEnabled || isBurningModeEnabled) {
         // Section Title
-        if (mainSection.Type === "Title") {
-            const title = document.createElement("h2");
-            title.style.border = "groove";
-            title.style.borderWidth = "2px 0px 1px 0px";
-            title.style.borderColor = mainColor;
-            title.style.padding = "5px 0";
-            title.textContent = mainSection.Title[currentLanguage];
-            subContainer.appendChild(title)
-        }
+
         subSection.features.forEach((feature) => {
 
             feature.featureContent.forEach((content) => {
