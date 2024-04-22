@@ -119,9 +119,7 @@ function createHTMLFromJSON() {
                     createButtonSection(section, subSection, subContainer);
 
                     // Buy Bonus
-                    if (gameHasBuyBonus == true) {
-                        createbuyBonusSection(section, subSection, subContainer);
-                    }
+                    createbuyBonusSection(section, subSection, subContainer);
                 });
 
                 if (section.sectionType === "BuyBonus") {
@@ -517,6 +515,7 @@ function createNewSections(mainSection, subSection, subContainer) {
                         rightDivParent.style.flex = 1;
 
                         if (feature.hasSpecialData == true) {
+                            console.log(feature.data.length)
                             feature.data.forEach((dataInfo) => {
                                 const rightDivChild = document.createElement("div");
                                 rightDivChild.style.display = "flex"
@@ -534,7 +533,13 @@ function createNewSections(mainSection, subSection, subContainer) {
                                 if (dataInfo.value != "") rightDivChild.appendChild(multiplierValue)
                                 if (dataInfo.specialContent[0][currentLanguage] != "") rightDivChild.appendChild(specialData)
 
-                                rightDivParent.appendChild(rightDivChild)
+                                if (feature.data.length > 1) {
+                                    rightDivParent.appendChild(rightDivChild)
+                                } else {
+                                    if (dataInfo.multipliers != "") rightDivParent.appendChild(multiplierValue)
+                                    if (dataInfo.value != "") rightDivParent.appendChild(multiplierValue)
+                                    if (dataInfo.specialContent[0][currentLanguage] != "") rightDivParent.appendChild(specialData)
+                                }
 
                             })
 
@@ -649,7 +654,7 @@ function createButtonSection(section, subSection, subContainer) {
 function createbuyBonusSection(mainSection, subSection, subContainer) {
     const isBuyBonusEnabled = mainSection.sectionType === "BuyBonus" && gameHasBuyBonus;
     const isTripleChanceEnabled = mainSection.sectionType === "tripleChance" && gameHasdoubleChance;
-    const isBurningModeEnabled = mainSection.sectionType === "burningMode" && gameHasdoubleChance;
+    const isBurningModeEnabled = mainSection.sectionType === "burningMode" && gameHasBurningMode;
 
     if (isBuyBonusEnabled || isTripleChanceEnabled || isBurningModeEnabled) {
         // Section Title
