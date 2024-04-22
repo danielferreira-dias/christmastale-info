@@ -1417,92 +1417,13 @@
                                 "direction": "row",
                                 "featureContent": [
                                     {
-                                        "type": "img_text",
+                                        "type": "img",
                                         "imageType": "big",
-                                        "divMaxWidth": "wizardWidth",
+                                        "divMaxWidth": "symbolWidth",
                                         "wrap": "wrap",
                                         "url": [
-                                            "images/Settings/Assets/WIZARD.png"
-                                        ],
-                                        "textAlignment": "center",
-                                        "hasSpecialData": true,
-                                        "data": [
-                                            {
-                                                "multipliers": "",
-                                                "value": "",
-                                                "specialContent": [
-                                                    {
-                                                        "EN": [
-                                                            "During the game, the Wizard has the ability to cast rays into the air. These rays have the potential to land on a symbol, allowing the Wizard to replace that symbol with either a SCATTER or WILD"
-                                                        ],
-                                                        "IT": [
-                                                            "Durante il gioco, lo Stregone ha la capacità di lanciare raggi in aria. Questi raggi hanno il potenziale per atterrare su un simbolo, consentendo allo Stregone di sostituire quel simbolo con uno SCATTER o un WILD."
-                                                        ],
-                                                        "RU": [
-                                                            " Во времѝ игры волшебник имеет ѝпоѝобноѝть излучать лучи в воздух. Эти лучи могут попаѝть на ѝимвол, позволѝѝ волшебнику заменить ѝтот ѝимвол на SCATTER или WILD."
-                                                        ],
-                                                        "FR": [
-                                                            "Pendant le jeu, le sorcier a la capacité de lancer des rayons dans l'air. Ces rayons ont le potentiel d'atterrir sur un symbole, permettant au sorcier de remplacer ce symbole par un SCATTER ou un WILD."
-                                                        ],
-                                                        "ZH": [
-                                                            " 在游戝过程中，巫师有能力将射线投射到空中。这些射线有坯能蝽在一个符坷上，使巫师坯以用 SCATTER 或 WILD 替杢该符坷。"
-                                                        ],
-                                                        "US": [
-                                                            "During the game, the Wizard has the ability to cast rays into the air. These rays have the potential to land on a symbol, allowing the Wizard to replace that symbol with either a SCATTER or WILD"
-                                                        ],
-                                                        "PT": [
-                                                            " Durante o jogo, o Mago tem a capacidade de lançar raios no ar. Esses raios têm o potencial de pousar em um símbolo, permitindo que o Mago substitua esse símbolo por um SCATTER ou WILD."
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "direction": "column",
-                                        "contentDirection": "column"
-                                    },
-                                    {
-                                        "type": "img_text",
-                                        "imageType": "big",
-                                        "divMaxWidth": "cauldronWidth",
-                                        "wrap": "wrap",
-                                        "url": [
-                                            "images/Settings/Assets/CAULDRON.png"
-                                        ],
-                                        "textAlignment": "center",
-                                        "hasSpecialData": true,
-                                        "data": [
-                                            {
-                                                "multipliers": "",
-                                                "value": "",
-                                                "specialContent": [
-                                                    {
-                                                        "EN": [
-                                                            "The Wizard has the ability to summon SCATTERS, SUPER SCATTERS or WILDS that come from the cauldron, causing the cauldron's color to change to green or gold. If the cauldron throws 3 SUPER SCATTERS, it will trigger SUPER FREE SPINS."
-                                                        ],
-                                                        "IT": [
-                                                            " Lo Stregone ha la capacità di evocare SCATTER, SUPER SCATTER o WILD che provengono dal calderone, causando il cambiamento di colore del calderone in verde o oro. Se il calderone scaglia 3 SUPER SCATTER, attiverà SUPER FREE SPINS."
-                                                        ],
-                                                        "RU": [
-                                                            "У волшебника еѝть ѝпоѝобноѝть призывать SCATTER, SUPER SCATTER или WILD, которые поѝвлѝютѝѝ из котла, заѝтавлѝѝ цвет котла изменитьѝѝ на зеленый или золотой. Еѝли котел выброѝит 3 SUPER SCATTER, ѝто приведет к активации SUPER FREE SPINS."
-                                                        ],
-                                                        "FR": [
-                                                            "Le sorcier a la capacité d'invoquer des SCATTER, SUPER SCATTER ou WILD qui proviennent du chaudron, provoquant ainsi un changement de couleur du chaudron en vert ou en or. Si le chaudron lance 3 SUPER SCATTER, cela déclenchera des SUPER FREE SPINS."
-                                                        ],
-                                                        "ZH": [
-                                                            "巫师有能力坬唤来自大锅的 SCATTER〝SUPER SCATTER 或 WILD，导致大锅的颜色坘为绿色或金色。如果大锅抛出 3 个 SUPER SCATTER，则将触坑 SUPER FREE SPINS。"
-                                                        ],
-                                                        "US": [
-                                                            "The Wizard has the ability to summon SCATTERS, SUPER SCATTERS or WILDS that come from the cauldron, causing the cauldron's color to change to green or gold. If the cauldron throws 3 SUPER SCATTERS, it will trigger SUPER FREE SPINS."
-                                                        ],
-                                                        "PT": [
-                                                            "O Mago tem a habilidade de invocar SCATTERS, SUPER SCATTERS ou WILDS que vêm do caldeirão, fazendo com que a cor do caldeirão mude para verde ou dourado. Se o caldeirão lançar 3 SUPER SCATTERS, ele ativará SUPER FREE SPINS."
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "direction": "column",
-                                        "contentDirection": "column"
+                                            "images/Settings/Assets/BOX.png"
+                                        ]
                                     }
                                 ]
                             },
@@ -1554,13 +1475,13 @@
             },
             {
                 "Title": {
-                    "EN": "FREE SPINS",
-                    "RU": "FREE SPINS",
-                    "FR": "FREE SPINS",
-                    "ZH": "FREE SPINS",
-                    "US": "FREE SPINS",
-                    "PT": "FREE SPINS",
-                    "IT": "FREE SPINS"
+                    "EN": "GOLDEN CHRISTMAS",
+                    "RU": "GOLDEN CHRISTMAS",
+                    "FR": "GOLDEN CHRISTMAS",
+                    "ZH": "GOLDEN CHRISTMAS",
+                    "US": "GOLDEN CHRISTMAS",
+                    "PT": "GOLDEN CHRISTMAS",
+                    "IT": "GOLDEN CHRISTMAS"
                 },
                 "sectionType": "Feature",
                 "Type": "Title",
@@ -1576,12 +1497,12 @@
                                 "featureContent": [
                                     {
                                         "type": "img",
-                                        "divMaxWidth": "symbolWidth",
+                                        "divMaxWidth": "screenWidth",
                                         "imageType": "big",
                                         "wrap": "",
                                         "url": [
-                                            "images/Settings/Symbol/9.png",
-                                            "images/Settings/Symbol/10.png"
+                                            "images/Settings/Assets/PAGE_1.png",
+                                            "images/Settings/Assets/PAGE_2.png"
                                         ],
                                         "direction": "row"
                                     }
@@ -1596,25 +1517,25 @@
                                         "textAlignment": "center",
                                         "content": {
                                             "EN": [
-                                                "During FREE SPINS, if there's three SCATTERS or SUPER SCATTERS the player will be awarded with either 2, 3 or 4 EXTRA SPINS. Press the autoplay button during the FREE SPINS feature to start the spins automatically."
+                                                "When 3 REEL WILD appear and you have 6 GOLD BALLS in the reels you get the GRAND CHRISTMAS BALLS FULL SCREEN."
                                             ],
                                             "IT": [
-                                                "Durante i FREE SPINS, se ci sono tre SCATTER o SUPER SCATTER, al giocatore verranno assegnati 2, 3 o 4 GIRO EXTRA. Premere il pulsante autoplay durante la funzione per avviare automaticamente i giri."
+                                                "Quando compaiono 3 REEL WILD e hai 6 PALLINE D'ORO nei rulli, ottieni le GRANDI PALLE DI NATALE A SCHERMO INTERO."
                                             ],
                                             "RU": [
-                                                "Во времѝ FREE SPINS, еѝли еѝть три SCATTER или SUPER SCATTER, игрок получит либо 2, 3 или 4 ДОПОЛНИТЕЛЬНЫХ ВРНЩЕНИЯ. Нажмите кнопку автовоѝпроизведениѝ во времѝ функции, чтобы автоматичеѝки запуѝтить вращениѝ."
+                                                "Когда появляются 3 REEL WILD и у вас есть 6 ЗОЛОТЫХ ШАРОВ на барабанах, вы получаете ПОЛНЫЙ ЭКРАН ВЕЛИКИХ РОЖДЕСТВЕНСКИХ ШАРОВ."
                                             ],
                                             "FR": [
-                                                "Pendant les FREE SPINS, s'il y a trois SCATTERS ou SUPER SCATTERS, le joueur recevra soit 2, 3 ou 4 TOURS SUPPLÉMENTAIRES. Appuyez sur le bouton de lecture automatique pendant la fonction pour démarrer les tours automatiquement."
+                                                "Lorsque 3 REEL WILD apparaissent et que vous avez 6 BOULES D'OR sur les rouleaux, vous obtenez les GRANDS BALLES DE NOËL EN PLEIN ÉCRAN."
                                             ],
                                             "ZH": [
-                                                "在兝费旋转期间，如果出现三个 SCATTER 或 SUPER SCATTER，玩家将获得额外的 2〝3 或 4 次旋转。在功能期间按下自动播放按钮，自动开始旋转。"
+                                                "当出现3个REEL WILD并且您在卷轴上有6个金球时，您将获得全屏幕的大圣诞球。"
                                             ],
                                             "US": [
-                                                "During FREE SPINS, if there's three SCATTERS or SUPER SCATTERS the player will be awarded with either 2, 3 or 4 EXTRA SPINS. Press the autoplay button during the FREE SPINS feature to start the spins automatically."
+                                                "When 3 REEL WILD appear and you have 6 GOLD BALLS in the reels you get the GRAND CHRISTMAS BALLS FULL SCREEN."
                                             ],
                                             "PT": [
-                                                "Durante os FREE SPINS, se houver três SCATTERS ou SUPER SCATTERS, o jogador será premiado com 2, 3 ou 4 GIROS EXTRA. Pressione o botão de reprodução automática durante a função para iniciar os giros automaticamente."
+                                                "Quando 3 símbolos REEL WILD aparecem e você tem 6 BOLAS DE OURO nos rolos, você obtém as GRANDES BOLAS DE NATAL EM TELA CHEIA."
                                             ]
                                         },
                                         "direction": "column",
@@ -1628,15 +1549,15 @@
             },
             {
                 "Title": {
-                    "EN": "EXTRA CHANCE FREE SPINS",
-                    "RU": "EXTRA CHANCE FREE SPINS",
-                    "FR": "EXTRA CHANCE FREE SPINS",
-                    "ZH": "EXTRA CHANCE FREE SPINS",
-                    "US": "EXTRA CHANCE FREE SPINS",
-                    "PT": "EXTRA CHANCE FREE SPINS",
-                    "IT": "EXTRA CHANCE FREE SPINS"
+                    "EN": "TRIPLE CHANCE",
+                    "RU": "TRIPLE CHANCE",
+                    "FR": "TRIPLE CHANCE",
+                    "ZH": "TRIPLE CHANCE",
+                    "US": "TRIPLE CHANCE",
+                    "PT": "TRIPLE CHANCE",
+                    "IT": "TRIPLE CHANCE"
                 },
-                "sectionType": "Feature",
+                "sectionType": "tripleChance",
                 "Type": "Title",
                 "SubSection": [
                     {
@@ -1649,126 +1570,58 @@
                                 "direction": "column",
                                 "featureContent": [
                                     {
-                                        "type": "img_text",
+                                        "type": "img",
                                         "imageType": "big",
                                         "divMaxWidth": "symbolWidth",
                                         "wrap": "wrap",
                                         "url": [
-                                            "images/Settings/Assets/X2.png"
-                                        ],
-                                        "textAlignment": "center",
-                                        "hasSpecialData": true,
-                                        "data": [
-                                            {
-                                                "multipliers": "",
-                                                "value": "",
-                                                "specialContent": [
-                                                    {
-                                                        "EN": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "IT": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "RU": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "FR": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "ZH": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "US": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "PT": [
-                                                            "X2 EXTRA CHANCE FREE SPINS"
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "direction": "row",
-                                        "contentDirection": "column"
-                                    },
-                                    {
-                                        "type": "img_text",
-                                        "imageType": "big",
-                                        "divMaxWidth": "symbolWidth",
-                                        "wrap": "wrap",
-                                        "url": [
-                                            "images/Settings/Assets/X10.png"
-                                        ],
-                                        "textAlignment": "center",
-                                        "hasSpecialData": true,
-                                        "data": [
-                                            {
-                                                "multipliers": "",
-                                                "value": "",
-                                                "specialContent": [
-                                                    {
-                                                        "EN": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "IT": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "RU": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "FR": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "ZH": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "US": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ],
-                                                        "PT": [
-                                                            "X10 EXTRA CHANCE FREE SPINS"
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ],
-                                        "direction": "row",
-                                        "contentDirection": "column"
-                                    },
+                                            "images/Settings/Assets/FRAME.png"
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "typeDisplay": "flex",
+                                "direction": "column",
+                                "featureContent": [
                                     {
                                         "type": "plural_text",
                                         "textAlignment": "center",
                                         "content": {
                                             "EN": [
-                                                "Player have the option to choose a special bet that can increase the probability of triggering FREE SPINS",
-                                                "Depending on the selected bet, the chances of getting FREE SPINS can be increased by 2 or 10 times. The values for these bets are x1.25 and x5, respectively.",
-                                                "If any of these options are selected, the CRISTAL SHOP will be disabled."
+                                                "The player can select the TRIPLE CHANCE option, paying 50% more of the bet, increasing the possibility of the CHRISTMAS BALLS being present to activate the BONUS",
+                                                "In normal mode, it takes about 228 spins average to receive a BONUS, but with a TRIPLE CHANCE active, it goes up to 75 spins",
+                                                "RTP - 93,22%"
                                             ],
                                             "IT": [
-                                                "Il giocatore ha l'opzione di scegliere una scommessa speciale che può aumentare la probabilità di attivare FREE SPINS",
-                                                "A seconda della scommessa selezionata, le possibilità di ottenere FREE SPINS possono essere aumentate di 2 o 10 volte. I valori per queste scommesse sono x1.25 e x5, rispettivamente.",
-                                                "Se una di queste opzioni viene selezionata, il CRISTAL SHOP sarà disabilitato."
+                                                "Il giocatore può selezionare l'opzione TRIPLE CHANCE, pagando il 50% in più della scommessa, aumentando la possibilità che le PALLINE DI NATALE siano presenti per attivare il BONUS",
+                                                "In modalità normale, ci vogliono in media circa 228 giri per ricevere un BONUS, ma con una TRIPLE CHANCE attiva, questo numero sale a 75 giri",
+                                                "RTP - 93,22%"
                                             ],
                                             "RU": [
-                                                "У игрока еѝть возможноѝть выбрать ѝпециальную ѝтавку, котораѝ может увеличить вероѝтноѝть активации FREE SPINS",
-                                                "В завиѝимоѝти от выбранной ѝтавки шанѝы получить FREE SPINS могут быть увеличены в 2 или 10 раз. Значениѝ длѝ ѝтих ѝтавок ѝоответѝтвенно x1.25 и x5.",
-                                                "Еѝли выбрана одна из ѝтих опций, CRISTAL SHOP будет отключен."
+                                                "Игрок может выбрать опцию TRIPLE CHANCE, заплатив на 50% больше ставки, увеличивая вероятность того, что РОЖДЕСТВЕНСКИЕ ШАРИКИ будут присутствовать для активации бонуса",
+                                                "В обычном режиме в среднем требуется около 228 спинов, чтобы получить бонус, но с активной TRIPLE CHANCE это число увеличивается до 75 спинов",
+                                                "RTP - 93,22%"
                                             ],
                                             "FR": [
-                                                "Le joueur a la possibilité de choisir une mise spéciale qui peut augmenter la probabilité de déclencher FREE SPINS",
-                                                "Selon la mise sélectionnée, les chances d'obtenir FREE SPINS peuvent être augmentées de 2 ou 10 fois. Les valeurs pour ces mises sont x1.25 et x5, respectivement.",
-                                                "Si l'une de ces options est sélectionnée, le CRISTAL SHOP sera désactivé."
+                                                "Le joueur peut sélectionner l'option TRIPLE CHANCE, en payant 50% de plus que la mise, augmentant ainsi la possibilité que les BOULES DE NOËL soient présentes pour activer le BONUS",
+                                                "En mode normal, il faut environ 228 tours en moyenne pour recevoir un BONUS, mais avec une TRIPLE CHANCE activée, cela monte à 75 tours",
+                                                "RTP - 93,22%"
                                             ],
                                             "ZH": [
-                                                "玩家有选择一秝特殊投注的选项，坯以增加触坑 FREE SPINS 的概率",
-                                                "根杮所选投注，获得 FREE SPINS 的机会坯以增加 2 或 10 倝。这些投注的值分别为 x1.25 和 x5。",
-                                                "如果选择了其中任何一个选项，CRISTAL SHOP 将被禝用。"
+                                                "玩家可以选择TRIPLE CHANCE选项，支付比赌注多50％，增加圣诞球出现以激活奖金的可能性",
+                                                "在普通模式下，平均需要约228次旋转才能获得奖金，但是如果启用TRIPLE CHANCE，这个数字会增加到75次旋转",
+                                                "RTP - 93,22%"
+                                            ],
+                                            "US": [
+                                                "The player can select the TRIPLE CHANCE option, paying 50% more of the bet, increasing the possibility of the CHRISTMAS BALLS being present to activate the BONUS",
+                                                "In normal mode, it takes about 228 spins average to receive a BONUS, but with a TRIPLE CHANCE active, it goes up to 75 spins",
+                                                "RTP - 93,22%"
                                             ],
                                             "PT": [
-                                                "Os jogadores têm a opção de escolher uma aposta especial que pode aumentar a probabilidade de acionar FREE SPINS",
-                                                "Dependendo da aposta selecionada, as chances de obter FREE SPINS podem ser aumentadas em 2 ou 10 vezes. Os valores para essas apostas são x1.25 e x5, respectivamente.",
-                                                "Se alguma dessas opções for selecionada, o CRISTAL SHOP será desativado."
+                                                "O jogador pode selecionar a opção TRIPLE CHANCE, pagando 50% a mais da aposta, aumentando a possibilidade de as BOLAS DE NATAL estarem presentes para ativar o BÔNUS",
+                                                "No modo normal, em média, são necessários cerca de 228 giros para receber um BÔNUS, mas com o TRIPLE CHANCE ativado, esse número sobe para 75 giros",
+                                                "RTP - 93,22%"
                                             ]
                                         },
                                         "direction": "column",
@@ -1976,7 +1829,7 @@
                     "PT": "BURNING MODE",
                     "IT": "BURNING MODE"
                 },
-                "sectionType": "Feature",
+                "sectionType": "burningMode",
                 "Type": "Title",
                 "SubSection": [
                     {

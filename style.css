@@ -18,6 +18,10 @@
     color: white;
     padding: 3rem;
   }
+
+  .symbol-section {
+    width: 100%;
+  }
   
   .heading-section-div {
     top: 0;
@@ -403,6 +407,15 @@
   }
   
   /* Extra small devices (phones, 600px and down) */
+  @media (max-width: 490px) {
+    .screenWidth {
+      width: 200px;
+    }
+    .symbolWidth {
+        width: 100px;
+      }
+  }
+
   @media only screen and (min-width: 900px) {
     .screenWidth {
       width: 400px;
